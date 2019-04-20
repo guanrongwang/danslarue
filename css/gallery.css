@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+	height:2500px;
+	padding-top: 100px;
+}
+.row {
+	padding:0 4px;
+	height: max-content;
+}
+
+.column {
+	box-sizing: border-box;
+	float: left;
+	width: 33.3%;
+	height: 300px;
+	padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	width:100%
+}
+
+#main {
+	margin-top: 50px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>home</title>
+		<link rel="stylesheet" type="text/css" href="css/general.css">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="js/general.js"></script>
+	</head>
+	<body>
+		<header>
+			<a class="skip-main" href="#main"> Skip to Content </a>
+			<nav>
+				<div id="left_nav">
+					<a href="home.html"><img src="img/logo.png" alt="placeholder"></a>
+				</div>
+				<div id="right_nav" class="topnav">
+					<a href="about.html">About</a>
+					<a href="gallery.html">Gallery</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    					<i class="fa fa-bars"></i>
+  					</a>
+				</div>
+			</nav>
+		</header>
+		<main>
+		<div id = "main" class = "container">
+			<div id = "slide_container">
+				<!-- Slideshow container -->
+				<div class="slideshow-container">
+					<!-- Full-width images with number and caption text -->
+					<div class="mySlides fade">
+						<img src="img/home/carousel/paris.png" style="width:100%" alt="placeholder">
+						<div class="text">Paris, Je t'aime</div>
+					</div>
+					<div class="mySlides fade">
+						<img src="img/home/carousel/rainbow building.png" style="width:100%" alt="placeholder">
+						<div class="text">Hanging out with the rainbow building in HK</div>
+					</div>
+					<div class="mySlides fade">
+						<img src="img/home/carousel/skyme.png" style="width:100%" alt="placeholder">
+						<div class="text">Playing with my bullon on the prairie of northen China</div>
+					</div>
+					<!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				</div>
+				<br>
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+			</div>
+			<div id="destination" class="section">
+				<h1>Destination</h1>
+				<div id="flipcard_container">
+					<!-- Control buttons -->
+					<div id="myBtnContainer">
+						<button class="btn" onclick="filterSelection('all')"> All</button>
+						<button class="btn" onclick="filterSelection('asia')"> Asia</button>
+						<button class="btn" onclick="filterSelection('america')"> America</button>
+						<button class="btn" onclick="filterSelection('europe')"> Europe</button>
+					</div>
+					<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+					<div class="card_container">
+						<div class="filterDiv europe flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/home/card/Switzerland.jpg" alt="Img" style="width:300px;height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1>Switzerland</h1>
+								</div>
+							</div>
+						</div>
+						<div class="filterDiv america flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/home/card/florida.JPG" alt="Img" style="width:300px;height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1>Florida</h1>
+								</div>
+							</div>
+						</div>
+						<div class="filterDiv america flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/home/card/ca.JPG" alt="Img" style="width:300px;height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1>California</h1>
+								</div>
+							</div>
+						</div>
+						<div class="filterDiv america flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/home/card/seattle.JPG" alt="Img" style="width:300px;height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1>Seattle</h1>
+								</div>
+							</div>
+						</div>
+						<div class="filterDiv europe flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/home/card/france.JPG" alt="Img" style="width:300px;height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1>France</h1>
+								</div>
+							</div>
+						</div>
+						<div class="filterDiv asia flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/home/card/qg.JPG" alt="Img" style="width:300px;height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1>Qinghao & Gansu</h1>
+								</div>
+							</div>
+						</div>
+						<div class="filterDiv asia flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/home/card/hk.JPG" alt="Img" style="width:300px;height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1>Hong Kong</h1>
+								</div>
+							</div>
+						</div>
+						<div class="filterDiv asia flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/home/card/bj.jpeg" alt="Img" style="width:300px;height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1>Beijing</h1>
+								</div>
+							</div>
+						</div>
+						<div class="filterDiv europe flip-card">
+							<div class="flip-card-inner">
+								<div class="flip-card-front">
+									<img src="img/home/card/england.JPG" alt="Img" style="width:300px;height:300px;">
+								</div>
+								<div class="flip-card-back">
+									<h1>England</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="journal" class="section">
+				<h1>Journal</h1>
+				<a class="polaroid" href="besancon.html">
+					<img src="img/home/journal/besancon.png" alt="polaroid" style="width:100%">
+					<div class="polar_container">
+						<h1>Meeting with diversity in Besancon</h1>
+						<h2>Sep 01, 2017  |  Reflection</h2>
+						<p>I lived in Besancon, a small city of eastern France, over the summer of 2016. Studied at applied language center, I had a chance to learn about a lot of countries that I had never heard of and getting to know a diverse group of fantastic people. </p>
+					</div>
+				</a>
+				<a class="polaroid" href="china.html">
+					<img src="img/home/journal/china.png" alt="polaroid" style="width:100%">
+					<div class="polar_container">
+						<h1>2,000 mile road trip in Northwestern China</h1>
+						<h2>Aug 01, 2018 | Travel</h2>
+						<p>I went on this classical 2,000miles road trip routes called "big circle" and saw obvisouly the most breathtaking and magnificient scenes ever!
+						</p>
+					</div>
+				</a>
+				<a class="polaroid" href="ca.html">
+					<img src="img/home/journal/ca.png" alt="polaroid" style="width:100%">
+					<div class="polar_container">
+						<h1>A novice driver in California</h1>
+						<h2>Feb 01, 2019 | Travel</h2>
+						<p>An excited adventure from San Diego - LA - Santa Barabara one week after I got my driver license in the US along with one other novice driver and three people don't know how to drive. 
+						</p>
+					</div>
+				</a>
+			</div>
+			
+		</div>
+		</main>
+		<footer>
+			<h1>Copyright 2019 Guanrong Wang</h1>
+		</footer>
+		<script src="js/home.js"></script>
+	</body>
+</html>

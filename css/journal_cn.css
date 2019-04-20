@@ -1,0 +1,37 @@
+.parallax {
+  /* The image used */
+  background-image: url("../img/home/journal/china/cover.JPG");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content_container {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+
+#content_container img{
+	height: 400px;
+	width: auto;
+}
+
+.arrow_left i {
+  font-size: 40pt;
+  float: left;
+  color:#F2AD9F;
+}
+
+.arrow_right i {
+  font-size: 40pt;
+  float: right;
+  color:#F2AD9F;
+}

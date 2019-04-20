@@ -1,0 +1,36 @@
+
+#about_content {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 10%;
+	padding-bottom: 10%;	
+}
+
+#type_head{
+	font-size: 30pt;
+	font-weight: 700;
+}
+
+#about_content #main_content {
+	width: 100%;
+	margin-top: 5%;
+}
+
+#content_text {
+	width: 45%;
+	margin:0;
+	float: left;
+}
+
+#content_img {
+	width: 45%;
+	float: right;
+}
+
+#content_img img {
+	margin:10px;
+	width: 100%;
+	height: auto;
+
+}
+
